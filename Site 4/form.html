@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <form class="form-style" action="#" method="POST">
+
+        <fieldset> 
+            <legend>Dados Pessoais</legend>
+            
+            <label for="nome_completo">Nome Completo:</label>
+            <input type="text" id="nome_completo" name="nome_completo" placeholder="Digite seu nome aqui" required>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" placeholder="Digite sua idade aqui" min="0" max="120">
+
+            <label for="nome_completo_da_mae">Nome Completo da Mãe:</label>
+            <input type="text" id="nome_completo_da_mae" name="nome_completo_da_mae" placeholder="Digite o nome da sua mãe">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail aqui" required>
+
+            <label for="uf">Unidade Federativa:</label>
+            <select name="uf" id="uf">
+                <option value="" selected disabled>Selecione uma UF</option>
+                <option value="sp">São Paulo</option>
+                <option value="go">Goiás</option>
+                <option value="am">Amazonas (Manaus)</option>
+                <!-- Nota: Israel é um país, não uma UF do Brasil -->
+            </select>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Sua senha" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gênero</legend>
+            
+            <input type="radio" id="masculino" name="genero" value="M">
+            <label for="masculino">Masculino</label>
+
+            <input type="radio" id="feminino" name="genero" value="F">
+            <label for="feminino">Feminino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Cursos</legend>
+            
+            <input type="checkbox" id="ti" name="cursos" value="TI">
+            <label for="ti">TI</label>
+
+            <input type="checkbox" id="mecanica-a" name="cursos" value="mecanica_aeronautica">
+            <label for="mecanica-a">Mecânica Aeronáutica</label>
+        </fieldset>
+
+        <button type="submit">Enviar Cadastro</button>
+
+    </form>
+
+</body>
+</html>
